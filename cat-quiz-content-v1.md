@@ -646,7 +646,7 @@ art:          art_J13 + filter_P_w + 委屈灰点缀
 |----|------|------|
 | 形态 | 纯静态前端（HTML/CSS/JS 或 Vite 打包） | 待定技术栈 |
 | 计分 | 浏览器内计算，不上传答案 | 定 |
-| 路径 | 若仓库名为 `cat-view-you`，注意 `base` 为 `/cat-view-you/` | 待确认 |
+| 路径 | 若仓库名为 `catproject`，注意 `base` 为 `/catproject/` | 待确认 |
 | 分享图 | 优先「canvas 拼接结果卡 → 用户长按保存」；OG 用 cover_og | 定 |
 | 域名 | 默认 `username.github.io/repo`；自定义域名可选 | 待定 |
 
@@ -668,3 +668,4 @@ art:          art_J13 + filter_P_w + 委屈灰点缀
 | 10 | GitHub Pages 发布 | 十三 | 待做 |
 
 > 注：第二节 64 条称号+定位已定稿；第八节用「岗位 core × 性格 suffix」批量生成解析与心里话，避免 68 份互抄。
+

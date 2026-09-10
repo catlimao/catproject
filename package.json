@@ -1,5 +1,5 @@
 {
-  "name": "cat-view-you",
+  "name": "catproject",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -21,3 +21,4 @@
     "vitest": "^2.1.8"
   }
 }
+
