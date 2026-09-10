@@ -1,0 +1,576 @@
+[
+  {
+    "type": "normal_result",
+    "slug": "wonang_worker",
+    "title": "窝囊的打工人",
+    "png": "characters/wonang_worker.png",
+    "webp": "characters/wonang_worker.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "wonang_litter_general",
+    "title": "窝囊的铲屎大将军",
+    "png": "characters/wonang_litter_general.png",
+    "webp": "characters/wonang_litter_general.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "wonang_kitchen_manager",
+    "title": "窝囊的御膳房总管",
+    "png": "characters/wonang_kitchen_manager.png",
+    "webp": "characters/wonang_kitchen_manager.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "wonang_snack_cabinet",
+    "title": "窝囊的行走零食柜",
+    "png": "characters/wonang_snack_cabinet.png",
+    "webp": "characters/wonang_snack_cabinet.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "wonang_play_officer",
+    "title": "窝囊的专职陪玩官",
+    "png": "characters/wonang_play_officer.png",
+    "webp": "characters/wonang_play_officer.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "wonang_human_cat_wand",
+    "title": "窝囊的人肉逗猫棒",
+    "png": "characters/wonang_human_cat_wand.png",
+    "webp": "characters/wonang_human_cat_wand.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "wonang_cat_tree_human",
+    "title": "窝囊的人形猫爬架",
+    "png": "characters/wonang_cat_tree_human.png",
+    "webp": "characters/wonang_cat_tree_human.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "wonang_warm_bed",
+    "title": "窝囊的恒温暖床垫",
+    "png": "characters/wonang_warm_bed.png",
+    "webp": "characters/wonang_warm_bed.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "wonang_auto_cat_bed",
+    "title": "窝囊的自动猫窝",
+    "png": "characters/wonang_auto_cat_bed.png",
+    "webp": "characters/wonang_auto_cat_bed.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "wonang_little_follower",
+    "title": "窝囊的贴身小跟班",
+    "png": "characters/wonang_little_follower.png",
+    "webp": "characters/wonang_little_follower.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "wonang_door_minister",
+    "title": "窝囊的开门部长",
+    "png": "characters/wonang_door_minister.png",
+    "webp": "characters/wonang_door_minister.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "wonang_scratch_master",
+    "title": "窝囊的御用挠痒师",
+    "png": "characters/wonang_scratch_master.png",
+    "webp": "characters/wonang_scratch_master.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "wonang_blame_taker",
+    "title": "窝囊的首席背锅侠",
+    "png": "characters/wonang_blame_taker.png",
+    "webp": "characters/wonang_blame_taker.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "wonang_night_guard",
+    "title": "窝囊的夜班侍卫",
+    "png": "characters/wonang_night_guard.png",
+    "webp": "characters/wonang_night_guard.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "wonang_box_opener",
+    "title": "窝囊的拆箱专员",
+    "png": "characters/wonang_box_opener.png",
+    "webp": "characters/wonang_box_opener.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "wonang_cat_translator",
+    "title": "窝囊的御用翻译官",
+    "png": "characters/wonang_cat_translator.png",
+    "webp": "characters/wonang_cat_translator.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "qinlao_worker",
+    "title": "勤劳的打工人",
+    "png": "characters/qinlao_worker.png",
+    "webp": "characters/qinlao_worker.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "qinlao_litter_general",
+    "title": "勤劳的铲屎大将军",
+    "png": "characters/qinlao_litter_general.png",
+    "webp": "characters/qinlao_litter_general.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "qinlao_kitchen_manager",
+    "title": "勤劳的御膳房总管",
+    "png": "characters/qinlao_kitchen_manager.png",
+    "webp": "characters/qinlao_kitchen_manager.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "qinlao_snack_cabinet",
+    "title": "勤劳的行走零食柜",
+    "png": "characters/qinlao_snack_cabinet.png",
+    "webp": "characters/qinlao_snack_cabinet.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "qinlao_play_officer",
+    "title": "勤劳的专职陪玩官",
+    "png": "characters/qinlao_play_officer.png",
+    "webp": "characters/qinlao_play_officer.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "qinlao_human_cat_wand",
+    "title": "勤劳的人肉逗猫棒",
+    "png": "characters/qinlao_human_cat_wand.png",
+    "webp": "characters/qinlao_human_cat_wand.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "qinlao_cat_tree_human",
+    "title": "勤劳的人形猫爬架",
+    "png": "characters/qinlao_cat_tree_human.png",
+    "webp": "characters/qinlao_cat_tree_human.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "qinlao_warm_bed",
+    "title": "勤劳的恒温暖床垫",
+    "png": "characters/qinlao_warm_bed.png",
+    "webp": "characters/qinlao_warm_bed.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "qinlao_auto_cat_bed",
+    "title": "勤劳的自动猫窝",
+    "png": "characters/qinlao_auto_cat_bed.png",
+    "webp": "characters/qinlao_auto_cat_bed.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "qinlao_little_follower",
+    "title": "勤劳的贴身小跟班",
+    "png": "characters/qinlao_little_follower.png",
+    "webp": "characters/qinlao_little_follower.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "qinlao_door_minister",
+    "title": "勤劳的开门部长",
+    "png": "characters/qinlao_door_minister.png",
+    "webp": "characters/qinlao_door_minister.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "qinlao_scratch_master",
+    "title": "勤劳的御用挠痒师",
+    "png": "characters/qinlao_scratch_master.png",
+    "webp": "characters/qinlao_scratch_master.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "qinlao_blame_taker",
+    "title": "勤劳的首席背锅侠",
+    "png": "characters/qinlao_blame_taker.png",
+    "webp": "characters/qinlao_blame_taker.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "qinlao_night_guard",
+    "title": "勤劳的夜班侍卫",
+    "png": "characters/qinlao_night_guard.png",
+    "webp": "characters/qinlao_night_guard.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "qinlao_box_opener",
+    "title": "勤劳的拆箱专员",
+    "png": "characters/qinlao_box_opener.png",
+    "webp": "characters/qinlao_box_opener.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "qinlao_cat_translator",
+    "title": "勤劳的御用翻译官",
+    "png": "characters/qinlao_cat_translator.png",
+    "webp": "characters/qinlao_cat_translator.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "aojiao_worker",
+    "title": "傲娇的打工人",
+    "png": "characters/aojiao_worker.png",
+    "webp": "characters/aojiao_worker.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "aojiao_litter_general",
+    "title": "傲娇的铲屎大将军",
+    "png": "characters/aojiao_litter_general.png",
+    "webp": "characters/aojiao_litter_general.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "aojiao_kitchen_manager",
+    "title": "傲娇的御膳房总管",
+    "png": "characters/aojiao_kitchen_manager.png",
+    "webp": "characters/aojiao_kitchen_manager.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "aojiao_snack_cabinet",
+    "title": "傲娇的行走零食柜",
+    "png": "characters/aojiao_snack_cabinet.png",
+    "webp": "characters/aojiao_snack_cabinet.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "aojiao_play_officer",
+    "title": "傲娇的专职陪玩官",
+    "png": "characters/aojiao_play_officer.png",
+    "webp": "characters/aojiao_play_officer.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "aojiao_human_cat_wand",
+    "title": "傲娇的人肉逗猫棒",
+    "png": "characters/aojiao_human_cat_wand.png",
+    "webp": "characters/aojiao_human_cat_wand.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "aojiao_cat_tree_human",
+    "title": "傲娇的人形猫爬架",
+    "png": "characters/aojiao_cat_tree_human.png",
+    "webp": "characters/aojiao_cat_tree_human.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "aojiao_warm_bed",
+    "title": "傲娇的恒温暖床垫",
+    "png": "characters/aojiao_warm_bed.png",
+    "webp": "characters/aojiao_warm_bed.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "aojiao_auto_cat_bed",
+    "title": "傲娇的自动猫窝",
+    "png": "characters/aojiao_auto_cat_bed.png",
+    "webp": "characters/aojiao_auto_cat_bed.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "aojiao_little_follower",
+    "title": "傲娇的贴身小跟班",
+    "png": "characters/aojiao_little_follower.png",
+    "webp": "characters/aojiao_little_follower.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "aojiao_door_minister",
+    "title": "傲娇的开门部长",
+    "png": "characters/aojiao_door_minister.png",
+    "webp": "characters/aojiao_door_minister.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "aojiao_scratch_master",
+    "title": "傲娇的御用挠痒师",
+    "png": "characters/aojiao_scratch_master.png",
+    "webp": "characters/aojiao_scratch_master.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "aojiao_blame_taker",
+    "title": "傲娇的首席背锅侠",
+    "png": "characters/aojiao_blame_taker.png",
+    "webp": "characters/aojiao_blame_taker.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "aojiao_night_guard",
+    "title": "傲娇的夜班侍卫",
+    "png": "characters/aojiao_night_guard.png",
+    "webp": "characters/aojiao_night_guard.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "aojiao_box_opener",
+    "title": "傲娇的拆箱专员",
+    "png": "characters/aojiao_box_opener.png",
+    "webp": "characters/aojiao_box_opener.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "aojiao_cat_translator",
+    "title": "傲娇的御用翻译官",
+    "png": "characters/aojiao_cat_translator.png",
+    "webp": "characters/aojiao_cat_translator.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "xijing_worker",
+    "title": "戏精的打工人",
+    "png": "characters/xijing_worker.png",
+    "webp": "characters/xijing_worker.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "xijing_litter_general",
+    "title": "戏精的铲屎大将军",
+    "png": "characters/xijing_litter_general.png",
+    "webp": "characters/xijing_litter_general.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "xijing_kitchen_manager",
+    "title": "戏精的御膳房总管",
+    "png": "characters/xijing_kitchen_manager.png",
+    "webp": "characters/xijing_kitchen_manager.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "xijing_snack_cabinet",
+    "title": "戏精的行走零食柜",
+    "png": "characters/xijing_snack_cabinet.png",
+    "webp": "characters/xijing_snack_cabinet.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "xijing_play_officer",
+    "title": "戏精的专职陪玩官",
+    "png": "characters/xijing_play_officer.png",
+    "webp": "characters/xijing_play_officer.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "xijing_human_cat_wand",
+    "title": "戏精的人肉逗猫棒",
+    "png": "characters/xijing_human_cat_wand.png",
+    "webp": "characters/xijing_human_cat_wand.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "xijing_cat_tree_human",
+    "title": "戏精的人形猫爬架",
+    "png": "characters/xijing_cat_tree_human.png",
+    "webp": "characters/xijing_cat_tree_human.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "xijing_warm_bed",
+    "title": "戏精的恒温暖床垫",
+    "png": "characters/xijing_warm_bed.png",
+    "webp": "characters/xijing_warm_bed.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "xijing_auto_cat_bed",
+    "title": "戏精的自动猫窝",
+    "png": "characters/xijing_auto_cat_bed.png",
+    "webp": "characters/xijing_auto_cat_bed.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "xijing_little_follower",
+    "title": "戏精的贴身小跟班",
+    "png": "characters/xijing_little_follower.png",
+    "webp": "characters/xijing_little_follower.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "xijing_door_minister",
+    "title": "戏精的开门部长",
+    "png": "characters/xijing_door_minister.png",
+    "webp": "characters/xijing_door_minister.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "xijing_scratch_master",
+    "title": "戏精的御用挠痒师",
+    "png": "characters/xijing_scratch_master.png",
+    "webp": "characters/xijing_scratch_master.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "xijing_blame_taker",
+    "title": "戏精的首席背锅侠",
+    "png": "characters/xijing_blame_taker.png",
+    "webp": "characters/xijing_blame_taker.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "xijing_night_guard",
+    "title": "戏精的夜班侍卫",
+    "png": "characters/xijing_night_guard.png",
+    "webp": "characters/xijing_night_guard.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "xijing_box_opener",
+    "title": "戏精的拆箱专员",
+    "png": "characters/xijing_box_opener.png",
+    "webp": "characters/xijing_box_opener.webp"
+  },
+  {
+    "type": "normal_result",
+    "slug": "xijing_cat_translator",
+    "title": "戏精的御用翻译官",
+    "png": "characters/xijing_cat_translator.png",
+    "webp": "characters/xijing_cat_translator.webp"
+  },
+  {
+    "type": "hidden_result",
+    "slug": "chosen_litter_owner",
+    "title": "天选之铲屎官",
+    "png": "hidden/hidden_chosen_litter_owner.png",
+    "webp": "hidden/hidden_chosen_litter_owner.webp"
+  },
+  {
+    "type": "hidden_result",
+    "slug": "cat_language_scholar",
+    "title": "猫语十级学者",
+    "png": "hidden/hidden_cat_language_scholar.png",
+    "webp": "hidden/hidden_cat_language_scholar.webp"
+  },
+  {
+    "type": "hidden_result",
+    "slug": "walking_atm",
+    "title": "猫界行走 ATM",
+    "png": "hidden/hidden_walking_atm.png",
+    "webp": "hidden/hidden_walking_atm.webp"
+  },
+  {
+    "type": "hidden_result",
+    "slug": "certified_scapegoat",
+    "title": "本猫认证大冤种",
+    "png": "hidden/hidden_certified_scapegoat.png",
+    "webp": "hidden/hidden_certified_scapegoat.webp"
+  },
+  {
+    "type": "general",
+    "slug": "home_hero_cat_detective",
+    "title": "首页主视觉猫猫侦探",
+    "png": "general/home_hero_cat_detective.png",
+    "webp": "general/home_hero_cat_detective.webp"
+  },
+  {
+    "type": "general",
+    "slug": "quiz_top_cat_observer",
+    "title": "答题页统一顶部猫猫观察装饰",
+    "png": "general/quiz_top_cat_observer.png",
+    "webp": "general/quiz_top_cat_observer.webp"
+  },
+  {
+    "type": "sticker",
+    "slug": "paw",
+    "title": "paw",
+    "png": "stickers/sticker_paw.png",
+    "webp": "stickers/sticker_paw.webp"
+  },
+  {
+    "type": "sticker",
+    "slug": "fish_snack",
+    "title": "fish_snack",
+    "png": "stickers/sticker_fish_snack.png",
+    "webp": "stickers/sticker_fish_snack.webp"
+  },
+  {
+    "type": "sticker",
+    "slug": "food_bowl",
+    "title": "food_bowl",
+    "png": "stickers/sticker_food_bowl.png",
+    "webp": "stickers/sticker_food_bowl.webp"
+  },
+  {
+    "type": "sticker",
+    "slug": "cat_can",
+    "title": "cat_can",
+    "png": "stickers/sticker_cat_can.png",
+    "webp": "stickers/sticker_cat_can.webp"
+  },
+  {
+    "type": "sticker",
+    "slug": "litter_scoop",
+    "title": "litter_scoop",
+    "png": "stickers/sticker_litter_scoop.png",
+    "webp": "stickers/sticker_litter_scoop.webp"
+  },
+  {
+    "type": "sticker",
+    "slug": "box",
+    "title": "box",
+    "png": "stickers/sticker_box.png",
+    "webp": "stickers/sticker_box.webp"
+  },
+  {
+    "type": "sticker",
+    "slug": "crown",
+    "title": "crown",
+    "png": "stickers/sticker_crown.png",
+    "webp": "stickers/sticker_crown.webp"
+  },
+  {
+    "type": "sticker",
+    "slug": "coin",
+    "title": "coin",
+    "png": "stickers/sticker_coin.png",
+    "webp": "stickers/sticker_coin.webp"
+  },
+  {
+    "type": "sticker",
+    "slug": "question_bubble",
+    "title": "question_bubble",
+    "png": "stickers/sticker_question_bubble.png",
+    "webp": "stickers/sticker_question_bubble.webp"
+  },
+  {
+    "type": "sticker",
+    "slug": "heart",
+    "title": "heart",
+    "png": "stickers/sticker_heart.png",
+    "webp": "stickers/sticker_heart.webp"
+  },
+  {
+    "type": "sticker",
+    "slug": "toy_wand",
+    "title": "toy_wand",
+    "png": "stickers/sticker_toy_wand.png",
+    "webp": "stickers/sticker_toy_wand.webp"
+  },
+  {
+    "type": "sticker",
+    "slug": "sleepy_moon",
+    "title": "sleepy_moon",
+    "png": "stickers/sticker_sleepy_moon.png",
+    "webp": "stickers/sticker_sleepy_moon.webp"
+  }
+]

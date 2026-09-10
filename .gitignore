@@ -1,0 +1,9 @@
+node_modules
+dist
+.env
+.DS_Store
+npm-debug.log*
+/cat_quiz_assets/
+/cat_quiz_characters_split/
+/public/cat_quiz_assets/source_sheets/
+/public/cat_quiz_assets/reference_pages/
