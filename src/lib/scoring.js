@@ -254,8 +254,8 @@ export function buildHiddenResult(hidden, catSuffixId) {
     tagline: definition.tagline,
     analysis: definition.analysis,
     catVoice: definition.catVoice,
-    image: `hidden/hidden_${hidden.slug}.webp`,
-    fallbackImage: `hidden/hidden_${hidden.slug}.png`,
+    image: `hidden/hidden_${hidden.slug}.png`,
+    fallbackImage: `hidden/hidden_${hidden.slug}.webp`,
     accent: definition.accent,
     sticker: definition.sticker,
     scores: definition.scores,
@@ -325,8 +325,8 @@ export function getAllHiddenResults() {
     resultSlug: slug,
     title: result.title,
     tagline: result.tagline,
-    image: `hidden/hidden_${slug}.webp`,
-    fallbackImage: `hidden/hidden_${slug}.png`,
+    image: `hidden/hidden_${slug}.png`,
+    fallbackImage: `hidden/hidden_${slug}.webp`,
     accent: result.accent,
   }));
 }
@@ -335,4 +335,5 @@ export function createShareText(result) {
   const url = `${window.location.origin}${import.meta.env.BASE_URL}#/result?r=${result.resultSlug}&cat=${result.catSuffix.id}`;
   return `测完了：我是「${result.title}」——${result.tagline}\n你也来测测在猫眼里你是个啥？\n${url}\n#在猫眼里你是个啥 #猫眼测试`;
 }
+
 
