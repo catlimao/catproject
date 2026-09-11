@@ -413,7 +413,8 @@ export const uiCopy = {
   siteName: '在猫眼里，你是个啥？',
   slogan: '回答 20 题，揭晓你在猫编制里的正式岗位',
   reveal: '猫正在召开人事会议…',
-  footer: '纯前端计分 · 答案不上传 · 用 GitHub Pages 部署',
+  footer: '',
 };
+
 
 
