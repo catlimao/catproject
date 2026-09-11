@@ -49,7 +49,7 @@ function Shell({ children }) {
         </nav>
       </header>
       {children}
-      <footer>{uiCopy.footer}</footer>
+      {uiCopy.footer ? <footer>{uiCopy.footer}</footer> : null}
     </div>
   );
 }
@@ -416,6 +416,7 @@ export default function App() {
 
   return <Shell>{page}</Shell>;
 }
+
 
 
 
