@@ -227,8 +227,8 @@ export function buildNormalResult(normalCore, catSuffixId, answers) {
     tagline: normalCore.role.tagline,
     analysis: `${normalCore.role.analysisCore}${normalCore.trait.suffix}`,
     catVoice: `${normalCore.role.catVoiceCore} ${normalCore.trait.catVoice}`,
-    image: `characters/${normalCore.resultSlug}.webp`,
-    fallbackImage: `characters/${normalCore.resultSlug}.png`,
+    image: `characters/${normalCore.resultSlug}.png`,
+    fallbackImage: `characters/${normalCore.resultSlug}.webp`,
     accent: suffix.accent || normalCore.trait.accent,
     sticker: suffix.sticker,
     scores,
@@ -293,8 +293,8 @@ export function buildResultFromSlug(resultSlug, catSuffixId = 'cool', storedScor
     tagline: role.tagline,
     analysis: `${role.analysisCore}${trait.suffix}`,
     catVoice: `${role.catVoiceCore} ${trait.catVoice}`,
-    image: `characters/${resultSlug}.webp`,
-    fallbackImage: `characters/${resultSlug}.png`,
+    image: `characters/${resultSlug}.png`,
+    fallbackImage: `characters/${resultSlug}.webp`,
     accent: suffix.accent || trait.accent,
     sticker: suffix.sticker,
     scores: storedScores || { food: 76, play: 76, endure: 76, love: 88 },
@@ -310,8 +310,8 @@ export function getAllNormalResults() {
       resultSlug: `${trait.slugPrefix}_${Object.entries(roles).find(([, value]) => value.id === role.id)[0]}`,
       title: `${trait.label}的${role.label}`,
       tagline: role.tagline,
-      image: `characters/${trait.slugPrefix}_${Object.entries(roles).find(([, value]) => value.id === role.id)[0]}.webp`,
-      fallbackImage: `characters/${trait.slugPrefix}_${Object.entries(roles).find(([, value]) => value.id === role.id)[0]}.png`,
+      image: `characters/${trait.slugPrefix}_${Object.entries(roles).find(([, value]) => value.id === role.id)[0]}.png`,
+      fallbackImage: `characters/${trait.slugPrefix}_${Object.entries(roles).find(([, value]) => value.id === role.id)[0]}.webp`,
       accent: trait.accent,
       role,
       trait,
@@ -335,3 +335,4 @@ export function createShareText(result) {
   const url = `${window.location.origin}${import.meta.env.BASE_URL}#/result?r=${result.resultSlug}&cat=${result.catSuffix.id}`;
   return `测完了：我是「${result.title}」——${result.tagline}\n你也来测测在猫眼里你是个啥？\n${url}\n#在猫眼里你是个啥 #猫眼测试`;
 }
+
