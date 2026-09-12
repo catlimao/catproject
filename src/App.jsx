@@ -205,10 +205,10 @@ function QuizPage() {
   );
 }
 
-function ScoreBar({ label, value }) {
+function ScoreBar({ label, value, tone }) {
   return (
-    <div className="score-row">
-      <div>
+    <div className={`score-row ${tone}`}>
+      <div className="score-topline">
         <span>{label}</span>
         <strong>{value}</strong>
       </div>
@@ -220,30 +220,48 @@ function ScoreBar({ label, value }) {
 }
 
 function ResultCard({ result, cardRef }) {
+  const titleParts = result.title.split('的');
+  const traitTitle = titleParts.length > 1 ? `${titleParts[0]}的` : '你是';
+  const roleTitle = titleParts.length > 1 ? titleParts.slice(1).join('的') : result.title;
+  const resultTags = result.kind === 'hidden'
+    ? ['隐藏款解锁', '猫眼认证', result.catSuffix.label, '超稀有']
+    : [result.catSuffix.label, result.role?.tagline || result.tagline, result.trait?.label || '猫眼认证', '猫主子钦点'];
+
   return (
     <article className={`result-card ${result.kind === 'hidden' ? 'hidden-card' : ''}`} ref={cardRef} style={{ '--accent': result.accent }}>
-      {result.kind !== 'hidden' && (
-        <div className="card-ribbon">
-          <span>{result.typeCode}</span>
-          <BadgeCheck size={18} aria-hidden="true" />
-        </div>
-      )}
+      <div className="poster-kicker">
+        <span>在猫眼里，你是个啥？</span>
+        <span>CAT KNOWS YOU BETTER</span>
+      </div>
+      <div className="result-title-block">
+        <p>你是：</p>
+        <h1><span>{traitTitle}</span>{roleTitle}</h1>
+      </div>
+      <div className="result-code-badge">
+        <strong>{result.typeCode}</strong>
+        <span>猫眼人格类型码</span>
+      </div>
       <div className="result-art-frame">
         <AssetImage src={result.image} fallback={result.fallbackImage} alt={result.title} className="result-art" />
       </div>
-      <div className="result-copy">
-        <p className="cat-style-chip">{result.catSuffix.label}</p>
-        <h1>{result.title}</h1>
-        <p className="tagline">{result.tagline}</p>
-        <p className="analysis">{result.analysis}</p>
-        <blockquote>{result.catVoice}</blockquote>
+      <div className="tag-strip">
+        {resultTags.map((tag) => <span key={tag}>{tag}</span>)}
       </div>
-      <div className="scores">
-        <ScoreBar label="供粮能力" value={result.scores.food} />
-        <ScoreBar label="陪玩水平" value={result.scores.play} />
-        <ScoreBar label="忍耐指数" value={result.scores.endure} />
-        <ScoreBar label="被爱程度" value={result.scores.love} />
-      </div>
+      <section className="analysis-card">
+        <ol>
+          <li>{result.tagline}</li>
+          <li>{result.analysis}</li>
+          <li>{result.catVoice}</li>
+        </ol>
+        <aside>猫说：你真的很会照顾我</aside>
+      </section>
+      <section className="scores" aria-label="你的猫系属性">
+        <h2>你的猫系属性</h2>
+        <ScoreBar label="供粮能力" value={result.scores.food} tone="food" />
+        <ScoreBar label="陪玩水平" value={result.scores.play} tone="play" />
+        <ScoreBar label="忍耐指数" value={result.scores.endure} tone="endure" />
+        <ScoreBar label="被爱程度" value={result.scores.love} tone="love" />
+      </section>
     </article>
   );
 }
@@ -416,6 +434,7 @@ export default function App() {
 
   return <Shell>{page}</Shell>;
 }
+
 
 
 
