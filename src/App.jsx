@@ -6,6 +6,7 @@ import {
   Check,
   Clipboard,
   Download,
+  Heart,
   RotateCcw,
   Sparkles,
 } from 'lucide-react';
@@ -205,11 +206,11 @@ function QuizPage() {
   );
 }
 
-function ScoreBar({ label, value, tone }) {
+function ScoreBar({ label, value, tone, icon }) {
   return (
     <div className={`score-row ${tone}`}>
       <div className="score-topline">
-        <span>{label}</span>
+        <span>{icon}{label}</span>
         <strong>{value}</strong>
       </div>
       <div className="score-track">
@@ -245,7 +246,7 @@ function ResultCard({ result, cardRef }) {
         <AssetImage src={result.image} fallback={result.fallbackImage} alt={result.title} className="result-art" />
       </div>
       <div className="tag-strip">
-        {resultTags.map((tag) => <span key={tag}>{tag}</span>)}
+        {resultTags.map((tag) => <span key={tag}><Sparkles size={18} aria-hidden="true" />{tag}</span>)}
       </div>
       <section className="analysis-card">
         <ol>
@@ -257,10 +258,10 @@ function ResultCard({ result, cardRef }) {
       </section>
       <section className="scores" aria-label="你的猫系属性">
         <h2>你的猫系属性</h2>
-        <ScoreBar label="供粮能力" value={result.scores.food} tone="food" />
-        <ScoreBar label="陪玩水平" value={result.scores.play} tone="play" />
-        <ScoreBar label="忍耐指数" value={result.scores.endure} tone="endure" />
-        <ScoreBar label="被爱程度" value={result.scores.love} tone="love" />
+        <ScoreBar label="供粮能力" value={result.scores.food} tone="food" icon={<Cat size={22} aria-hidden="true" />} />
+        <ScoreBar label="陪玩水平" value={result.scores.play} tone="play" icon={<Sparkles size={22} aria-hidden="true" />} />
+        <ScoreBar label="忍耐指数" value={result.scores.endure} tone="endure" icon={<BadgeCheck size={22} aria-hidden="true" />} />
+        <ScoreBar label="被爱程度" value={result.scores.love} tone="love" icon={<Heart size={22} aria-hidden="true" />} />
       </section>
     </article>
   );
@@ -434,6 +435,8 @@ export default function App() {
 
   return <Shell>{page}</Shell>;
 }
+
+
 
 
 
