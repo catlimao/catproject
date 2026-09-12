@@ -7,6 +7,8 @@ import {
   Clipboard,
   Download,
   Heart,
+  PawPrint,
+  ShieldCheck,
   RotateCcw,
   Sparkles,
 } from 'lucide-react';
@@ -225,8 +227,18 @@ function ResultCard({ result, cardRef }) {
   const traitTitle = titleParts.length > 1 ? `${titleParts[0]}的` : '你是';
   const roleTitle = titleParts.length > 1 ? titleParts.slice(1).join('的') : result.title;
   const resultTags = result.kind === 'hidden'
-    ? ['隐藏款解锁', '猫眼认证', result.catSuffix.label, '超稀有']
-    : [result.catSuffix.label, result.role?.tagline || result.tagline, result.trait?.label || '猫眼认证', '猫主子钦点'];
+    ? [
+      { label: '隐藏款解锁', icon: <Sparkles size={18} aria-hidden="true" /> },
+      { label: '猫眼认证', icon: <BadgeCheck size={18} aria-hidden="true" /> },
+      { label: result.catSuffix.label, icon: <Cat size={18} aria-hidden="true" /> },
+      { label: '超稀有', icon: <Heart size={18} aria-hidden="true" /> },
+    ]
+    : [
+      { label: result.catSuffix.label, icon: <Cat size={18} aria-hidden="true" /> },
+      { label: result.role?.tagline || result.tagline, icon: <PawPrint size={18} aria-hidden="true" /> },
+      { label: result.trait?.label || '猫眼认证', icon: <Sparkles size={18} aria-hidden="true" /> },
+      { label: '猫主子钦点', icon: <BadgeCheck size={18} aria-hidden="true" /> },
+    ];
 
   return (
     <article className={`result-card ${result.kind === 'hidden' ? 'hidden-card' : ''}`} ref={cardRef} style={{ '--accent': result.accent }}>
@@ -246,7 +258,7 @@ function ResultCard({ result, cardRef }) {
         <AssetImage src={result.image} fallback={result.fallbackImage} alt={result.title} className="result-art" />
       </div>
       <div className="tag-strip">
-        {resultTags.map((tag) => <span key={tag}><Sparkles size={18} aria-hidden="true" />{tag}</span>)}
+        {resultTags.map((tag) => <span key={tag.label}>{tag.icon}{tag.label}</span>)}
       </div>
       <section className="analysis-card">
         <ol>
@@ -260,7 +272,7 @@ function ResultCard({ result, cardRef }) {
         <h2>你的猫系属性</h2>
         <ScoreBar label="供粮能力" value={result.scores.food} tone="food" icon={<Cat size={22} aria-hidden="true" />} />
         <ScoreBar label="陪玩水平" value={result.scores.play} tone="play" icon={<Sparkles size={22} aria-hidden="true" />} />
-        <ScoreBar label="忍耐指数" value={result.scores.endure} tone="endure" icon={<BadgeCheck size={22} aria-hidden="true" />} />
+        <ScoreBar label="忍耐指数" value={result.scores.endure} tone="endure" icon={<ShieldCheck size={22} aria-hidden="true" />} />
         <ScoreBar label="被爱程度" value={result.scores.love} tone="love" icon={<Heart size={22} aria-hidden="true" />} />
       </section>
     </article>
@@ -435,6 +447,7 @@ export default function App() {
 
   return <Shell>{page}</Shell>;
 }
+
 
 
 

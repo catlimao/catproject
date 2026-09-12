@@ -661,6 +661,20 @@ footer {
   font-size: 15px;
 }
 
+.tag-strip span {
+  gap: 8px;
+}
+
+.tag-strip svg,
+.score-topline svg {
+  flex: 0 0 auto;
+  padding: 4px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.72);
+  color: #4a3020;
+  stroke-width: 3;
+  box-shadow: 0 2px 0 rgba(94, 60, 28, 0.1);
+}
 .tag-strip span:nth-child(1) { background: #ffd2d0; }
 .tag-strip span:nth-child(2) { background: #ffe68e; }
 .tag-strip span:nth-child(3) { background: #aeeed6; }
@@ -1025,6 +1039,7 @@ footer {
     padding-top: 0;
   }
 }
+
 
 
 
