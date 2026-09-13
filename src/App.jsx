@@ -16,7 +16,7 @@ import { assetBase, catSuffixes, questions, roles, traits, uiCopy } from './data
 import { buildResultFromSlug, calculateResult, createShareText, getAllHiddenResults, getAllNormalResults } from './lib/scoring';
 import { clearDraft, readDraft, readLastResult, readUnlockedResults, saveDraft, saveLastResult, unlockResult } from './lib/storage';
 
-const assetVersion = '20260913c';
+const assetVersion = '20260913d';
 const versionedAsset = (path) => `${assetBase}${path}?v=${assetVersion}`;
 
 function getHashRoute() {
@@ -244,15 +244,15 @@ function ResultCard({ result, cardRef }) {
   const resultTags = result.kind === 'hidden'
     ? [
       { label: '隐藏款解锁', icon: <StickerIcon name="crown" /> },
-      { label: '猫眼认证', icon: <StickerIcon name="paw" /> },
+      { label: '猫眼认证', icon: <StickerIcon name="question" /> },
       { label: result.catSuffix.label, icon: <StickerIcon name="paw" /> },
       { label: '超稀有', icon: <StickerIcon name="heart" /> },
     ]
     : [
       { label: result.catSuffix.label, icon: <StickerIcon name="paw" /> },
-      { label: result.role?.tagline || result.tagline, icon: <StickerIcon name="fish" /> },
+      { label: result.role?.label || '猫眼岗位', icon: <StickerIcon name="scoop" /> },
       { label: result.trait?.label || '猫眼认证', icon: <StickerIcon name="crown" /> },
-      { label: '猫主子钦点', icon: <StickerIcon name="paw" /> },
+      { label: '猫主子钦点', icon: <StickerIcon name="heart" /> },
     ];
 
   return (
@@ -462,6 +462,8 @@ export default function App() {
 
   return <Shell>{page}</Shell>;
 }
+
+
 
 
 

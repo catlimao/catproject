@@ -304,7 +304,7 @@ footer {
 }
 
 .result-tile {
-  padding: 14px;
+  padding: 14px 16px;
 }
 
 .result-tile img,
@@ -649,12 +649,12 @@ footer {
 .tag-strip .tag-pill {
   min-height: 56px;
   display: grid;
-  grid-template-columns: 44px minmax(0, 1fr);
+  grid-template-columns: 38px minmax(0, 1fr);
   align-items: center;
   justify-content: center;
   text-align: center;
   gap: 8px;
-  padding: 8px 14px 8px 10px;
+  padding: 8px 16px 8px 12px;
   border-radius: 999px;
   background: color-mix(in srgb, var(--accent) 30%, white);
   border: 1px solid rgba(117, 82, 43, 0.16);
@@ -774,7 +774,7 @@ footer {
   background: #fffdf9;
   border: 1px solid rgba(80, 55, 34, 0.12);
   border-radius: 16px;
-  padding: 14px;
+  padding: 14px 16px;
 }
 
 .score-topline {
@@ -788,7 +788,7 @@ footer {
 .score-label {
   min-width: 0;
   display: grid;
-  grid-template-columns: 58px minmax(0, 1fr);
+  grid-template-columns: 46px minmax(0, 1fr);
   align-items: center;
   color: #33251b;
   font-weight: 900;
@@ -859,7 +859,7 @@ footer {
   margin-top: 18px;
   border-radius: 12px;
   border: 1px solid rgba(80, 55, 34, 0.18);
-  padding: 14px;
+  padding: 14px 16px;
   resize: vertical;
 }
 .gallery-page {
@@ -1029,7 +1029,7 @@ footer {
 
   .option-card {
     min-height: 96px;
-    padding: 14px;
+    padding: 14px 16px;
   }
 
   .result-card {
@@ -1055,6 +1055,7 @@ footer {
     padding-top: 0;
   }
 }
+
 
 
 
