@@ -27,16 +27,25 @@ function navigate(to) {
 }
 
 function AssetImage({ src, fallback, alt, className }) {
+  const [currentSrc, setCurrentSrc] = useState(src);
+
+  useEffect(() => {
+    setCurrentSrc(src);
+  }, [src]);
+
   return (
-    <picture>
-      <source srcSet={`${assetBase}${src}`} type="image/webp" />
-      <img className={className} src={`${assetBase}${fallback || src}`} alt={alt} loading="lazy" />
-    </picture>
+    <img
+      className={className}
+      src={versionedAsset(currentSrc)}
+      alt={alt}
+      loading="lazy"
+      onError={() => fallback && currentSrc !== fallback ? setCurrentSrc(fallback) : undefined}
+    />
   );
 }
 
 function StickerIcon({ name, alt = '' }) {
-  return <img className="sticker-icon" src={`${assetBase}icons/${name}.png`} alt={alt} loading="lazy" />;
+  return <img className="sticker-icon" src={versionedAsset(`icons/${name}.png`)} alt={alt} loading="lazy" />;
 }
 function Shell({ children }) {
   return (
@@ -450,6 +459,8 @@ export default function App() {
 
   return <Shell>{page}</Shell>;
 }
+
+
 
 
 
