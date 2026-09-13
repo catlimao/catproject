@@ -215,7 +215,7 @@ function ScoreBar({ label, value, tone, icon }) {
   return (
     <div className={`score-row ${tone}`}>
       <div className="score-topline">
-        <span>{icon}{label}</span>
+        <span className="score-label">{icon}<span>{label}</span></span>
         <strong>{value}</strong>
       </div>
       <div className="score-track">
@@ -261,7 +261,7 @@ function ResultCard({ result, cardRef }) {
         <AssetImage src={result.image} fallback={result.fallbackImage} alt={result.title} className="result-art" />
       </div>
       <div className="tag-strip">
-        {resultTags.map((tag) => <span key={tag.label}>{tag.icon}{tag.label}</span>)}
+        {resultTags.map((tag) => <span key={tag.label} className="tag-pill">{tag.icon}<span>{tag.label}</span></span>)}
       </div>
       <section className="analysis-card">
         <ol>
@@ -450,6 +450,7 @@ export default function App() {
 
   return <Shell>{page}</Shell>;
 }
+
 
 
 
