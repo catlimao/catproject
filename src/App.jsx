@@ -35,6 +35,9 @@ function AssetImage({ src, fallback, alt, className }) {
   );
 }
 
+function StickerIcon({ name, alt = '' }) {
+  return <img className="sticker-icon" src={`${assetBase}icons/${name}.png`} alt={alt} loading="lazy" />;
+}
 function Shell({ children }) {
   return (
     <div className="app-shell">
@@ -45,7 +48,7 @@ function Shell({ children }) {
         </button>
         <nav>
           <button className="icon-text-button" onClick={() => navigate('/quiz')} title="开始测试">
-            <Sparkles size={18} aria-hidden="true" />
+            <StickerIcon name="crown" />
             <span>测试</span>
           </button>
 
@@ -170,7 +173,7 @@ function QuizPage() {
               {catSuffixes.map((suffix) => (
                 <button className="option-card" key={suffix.id} onClick={() => chooseCatSuffix(suffix.id)}>
                   <span className="option-letter" style={{ backgroundColor: suffix.accent }}>
-                    <Cat size={18} aria-hidden="true" />
+                    <StickerIcon name="paw" />
                   </span>
                   <strong>{suffix.label}</strong>
                   <span>{suffix.note}</span>
@@ -228,16 +231,16 @@ function ResultCard({ result, cardRef }) {
   const roleTitle = titleParts.length > 1 ? titleParts.slice(1).join('的') : result.title;
   const resultTags = result.kind === 'hidden'
     ? [
-      { label: '隐藏款解锁', icon: <Sparkles size={18} aria-hidden="true" /> },
-      { label: '猫眼认证', icon: <BadgeCheck size={18} aria-hidden="true" /> },
-      { label: result.catSuffix.label, icon: <Cat size={18} aria-hidden="true" /> },
-      { label: '超稀有', icon: <Heart size={18} aria-hidden="true" /> },
+      { label: '隐藏款解锁', icon: <StickerIcon name="crown" /> },
+      { label: '猫眼认证', icon: <StickerIcon name="paw" /> },
+      { label: result.catSuffix.label, icon: <StickerIcon name="paw" /> },
+      { label: '超稀有', icon: <StickerIcon name="heart" /> },
     ]
     : [
-      { label: result.catSuffix.label, icon: <Cat size={18} aria-hidden="true" /> },
-      { label: result.role?.tagline || result.tagline, icon: <PawPrint size={18} aria-hidden="true" /> },
-      { label: result.trait?.label || '猫眼认证', icon: <Sparkles size={18} aria-hidden="true" /> },
-      { label: '猫主子钦点', icon: <BadgeCheck size={18} aria-hidden="true" /> },
+      { label: result.catSuffix.label, icon: <StickerIcon name="paw" /> },
+      { label: result.role?.tagline || result.tagline, icon: <StickerIcon name="fish" /> },
+      { label: result.trait?.label || '猫眼认证', icon: <StickerIcon name="crown" /> },
+      { label: '猫主子钦点', icon: <StickerIcon name="paw" /> },
     ];
 
   return (
@@ -270,10 +273,10 @@ function ResultCard({ result, cardRef }) {
       </section>
       <section className="scores" aria-label="你的猫系属性">
         <h2>你的猫系属性</h2>
-        <ScoreBar label="供粮能力" value={result.scores.food} tone="food" icon={<Cat size={22} aria-hidden="true" />} />
-        <ScoreBar label="陪玩水平" value={result.scores.play} tone="play" icon={<Sparkles size={22} aria-hidden="true" />} />
-        <ScoreBar label="忍耐指数" value={result.scores.endure} tone="endure" icon={<ShieldCheck size={22} aria-hidden="true" />} />
-        <ScoreBar label="被爱程度" value={result.scores.love} tone="love" icon={<Heart size={22} aria-hidden="true" />} />
+        <ScoreBar label="供粮能力" value={result.scores.food} tone="food" icon={<StickerIcon name="bowl" />} />
+        <ScoreBar label="陪玩水平" value={result.scores.play} tone="play" icon={<StickerIcon name="wand" />} />
+        <ScoreBar label="忍耐指数" value={result.scores.endure} tone="endure" icon={<StickerIcon name="scoop" />} />
+        <ScoreBar label="被爱程度" value={result.scores.love} tone="love" icon={<StickerIcon name="heart" />} />
       </section>
     </article>
   );
@@ -328,7 +331,7 @@ function ResultPage({ params }) {
       <main className="empty-page">
         <h1>这张任命书暂时找不到</h1>
         <button className="primary-button" onClick={() => navigate('/quiz')}>
-          <Sparkles size={18} aria-hidden="true" />
+          <StickerIcon name="crown" />
           <span>重新测试</span>
         </button>
       </main>
@@ -384,7 +387,7 @@ function GalleryPage() {
           <h1>已解锁 {unlocked.length} / {allResults.length}</h1>
         </div>
         <button className="primary-button" onClick={() => navigate('/quiz')}>
-          <Sparkles size={18} aria-hidden="true" />
+          <StickerIcon name="crown" />
           <span>去测试</span>
         </button>
       </section>
@@ -447,6 +450,8 @@ export default function App() {
 
   return <Shell>{page}</Shell>;
 }
+
+
 
 
 

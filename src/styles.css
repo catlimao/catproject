@@ -665,15 +665,18 @@ footer {
   gap: 8px;
 }
 
-.tag-strip svg,
-.score-topline svg {
+.sticker-icon {
   flex: 0 0 auto;
-  padding: 4px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.72);
-  color: #4a3020;
-  stroke-width: 3;
-  box-shadow: 0 2px 0 rgba(94, 60, 28, 0.1);
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 0 rgba(94, 60, 28, 0.12));
+}
+
+.score-topline .sticker-icon {
+  width: 42px;
+  height: 42px;
+  margin: -8px 0 -6px -4px;
 }
 .tag-strip span:nth-child(1) { background: #ffd2d0; }
 .tag-strip span:nth-child(2) { background: #ffe68e; }
@@ -1039,6 +1042,7 @@ footer {
     padding-top: 0;
   }
 }
+
 
 
 
