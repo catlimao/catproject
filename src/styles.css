@@ -627,13 +627,13 @@ footer {
 
 .hidden-card .result-art-frame {
   min-height: clamp(360px, 62vw, 560px);
-  padding: 0;
+  padding: clamp(14px, 3vw, 28px);
   background:
     radial-gradient(ellipse at 50% 76%, rgba(255, 219, 103, 0.45), transparent 60%);
 }
 
 .hidden-card .result-art {
-  width: min(100%, 610px);
+  width: min(94%, 560px);
   max-height: none;
 }
 
@@ -1055,6 +1055,7 @@ footer {
     padding-top: 0;
   }
 }
+
 
 
 
