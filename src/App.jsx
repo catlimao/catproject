@@ -16,7 +16,7 @@ import { assetBase, catSuffixes, questions, roles, traits, uiCopy } from './data
 import { buildResultFromSlug, calculateResult, createShareText, getAllHiddenResults, getAllNormalResults } from './lib/scoring';
 import { clearDraft, readDraft, readLastResult, readUnlockedResults, saveDraft, saveLastResult, unlockResult } from './lib/storage';
 
-const assetVersion = '20260914c';
+const assetVersion = '20260914d';
 const versionedAsset = (path) => `${assetBase}${path}?v=${assetVersion}`;
 
 function getHashRoute() {
