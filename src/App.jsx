@@ -16,7 +16,7 @@ import { assetBase, catSuffixes, questions, roles, traits, uiCopy } from './data
 import { buildResultFromSlug, calculateResult, createShareText, getAllHiddenResults, getAllNormalResults } from './lib/scoring';
 import { clearDraft, readDraft, readLastResult, readUnlockedResults, saveDraft, saveLastResult, unlockResult } from './lib/storage';
 
-const assetVersion = '20260914f';
+const assetVersion = '20260915a';
 const versionedAsset = (path) => `${assetBase}${path}?v=${assetVersion}`;
 
 function getHashRoute() {
@@ -29,7 +29,7 @@ function navigate(to) {
   window.location.hash = to;
 }
 
-function AssetImage({ src, fallback, alt, className }) {
+function AssetImage({ src, fallback, alt, className, loading = 'lazy', fetchPriority = 'auto' }) {
   const [currentSrc, setCurrentSrc] = useState(src);
 
   useEffect(() => {
@@ -270,7 +270,7 @@ function ResultCard({ result, cardRef }) {
         <span>猫眼人格类型码</span>
       </div>
       <div className="result-art-frame">
-        <AssetImage src={result.image} fallback={result.fallbackImage} alt={result.title} className="result-art" />
+        <AssetImage src={result.image} fallback={result.fallbackImage} alt={result.title} className="result-art" loading="eager" fetchPriority="high" />
       </div>
       <div className="tag-strip">
         {resultTags.map((tag) => <span key={tag.label} className="tag-pill">{tag.icon}<span>{tag.label}</span></span>)}
